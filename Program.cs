@@ -1,98 +1,75 @@
-﻿//First exercise
-
-// Написать программу, которая на вход принимает число и выдает его квадрат (число умноденное само на себя)
-
-// Console.WriteLine ("Input a number:");
-// int num = Convert.ToInt32(Console.ReadLine());
-// int res = num * num;
-// Console.WriteLine ($"Quarter of {num} is {res}");
-
-
-
-//Second exercise
-//Написать программу, которая на вход принимает 2 числа и проверяет, является ли первое число квадратом второго
+﻿// Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+// a = 5; b = 7 -> max = 7
+// a = 2 b = 10 -> max = 10
+// a = -9 b = -3 -> max = -3
 
 // Console.WriteLine ("Input a first number:");
-// int x = Convert.ToInt32(Console.ReadLine());
+// int a = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine ("Input a second number:");
-// int y = Convert.ToInt32(Console.ReadLine());
-// if (x == y * y)
+// int b = Convert.ToInt32(Console.ReadLine());
+// int max = 0;
+// if (a < b)
 // {
-//     Console.WriteLine ($"Second number {x} is quarter of first number {y}");
+// max = b;
+// Console.WriteLine ($"Max number is {max}");
+// } 
+// if (b < a)
+// {
+// max = a;
+// Console.WriteLine ($"Max number is {max}");
+// } 
+//  if (a==b)
+// {
+// max = a;
+// Console.WriteLine ($"This numbers is equals");
+// }
+
+
+// Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+// 2, 3, 7 -> 7
+// 44 5 78 -> 78
+// 22 3 9 -> 22
+
+// Console.WriteLine ("Input a first number:");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine ("Input a second number:");
+// int b = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine ("Input a third number:");
+// int c = Convert.ToInt32(Console.ReadLine());
+// int max = a;
+// if (a > max) max = a;
+// if (b > max) max = b;
+// if (c > max) max = c;
+// Console.WriteLine ($"Max number is {max}");
+
+
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+
+// Console.WriteLine ("Input a first number:");
+// int a = Convert.ToInt32(Console.ReadLine());
+// int res = a % 2;
+// if (res == 0)
+// {
+// Console.WriteLine ($"This number is even");
 // }
 // else
 // {
-//     Console.WriteLine ($"Second number {x} is not quarter of first number {y}");
+// Console.WriteLine ($"This number is odd");    
 // }
 
-//Third exercise
-//Написать программу, которая на вход принимает одночисло (N), а на выходе показывает все целые числа от 0 до N
 
-// Console.WriteLine ("Input a number:");
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+// Console.WriteLine ("Input a first number:");
 // int n = Convert.ToInt32(Console.ReadLine());
-// int count = 0;
-// while (count<n)
+// int count = 2;
+// while (count < n)
 // {
 // Console.WriteLine(count);
-// count++;
+// count = count + 2;
 // }
-
-//Написать программу, которая на вход принимает одночисло (N), а на выходе показывает все целые числа от -N до N
-// Console.WriteLine ("Input a number:");
-// int n = Convert.ToInt32(Console.ReadLine());
-// int current = n*(-1);
-// for(int i = current; i<=n; i++)
-// {
-// Console.Write($"{i}");
-// }
-
-
-//Fourth exercise
-//Написать программу, которая принимает н вход трёхзначное число и на выходе показывает последнюю цифру этого числа
-// Console.WriteLine ("Input a third char number:");
-// int num = Convert.ToInt32(Console.ReadLine());
-// if (num<0)
-// {
-//     num = num * (-1);
-// }
-// if (num>99 && num <1000)
-// {
-// int res = num % 10;
-// Console.WriteLine ($"Last numb is {res}");
-// }
-// else {
-//     Console.WriteLine ("Wrong input");
-// }
-
-
-//Fifth exercise
-//Написать программу, которая будет выдавать название дня недели по заданному номеру
-// Console.WriteLine ("Input a number:");
-// int num = Convert.ToInt32(Console.ReadLine());
-
-// if (num>0 && num<8){
-//     if(num == 1){
-//         Console.WriteLine ("Monday");
-//     }
-//     else if (num == 2){
-//         Console.WriteLine ("Tuesday");
-//     }
-//     else if (num == 3){
-//         Console.WriteLine ("Wednesday");
-//     }
-//     else if (num == 4){
-//         Console.WriteLine ("Thursday");
-//     }
-//     else if (num == 5){
-//         Console.WriteLine ("Friday");
-//     }
-//     else if (num == 6){
-//         Console.WriteLine ("Saturday");
-//     }
-//     else {
-//         Console.WriteLine ("Sunday");
-//     }
-// }
-//     else{
-//         Console.WriteLine ("Wrong input");
-//     }
